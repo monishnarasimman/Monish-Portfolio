@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 h2 {
   font-family: "Dancing Script";
@@ -91,6 +92,7 @@ h1 {
 .name {
   align-self: self-start;
 }
+
 /*about me starts*/
 .content {
   max-width: 1200px;
@@ -331,12 +333,19 @@ footer {
 }
 
 /* Profile Section Styling */
+.first-home{
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+}
 #profile {
   display: flex;
-  justify-content: flex-end; /* Align the profile section to the right */
+  justify-content: flex-start; 
   padding: 40px;
-  background-color: #2c2c2c; /* Dark theme background */
+  background-color:none; /* Dark theme background */
   color: #fff; /* Light text for dark background */
+  width: 1000px;
+  height: 600px;
 }
 
 .profile-container {
@@ -346,31 +355,24 @@ footer {
   width: 500px; /* Set width of the profile container */
 }
 
-.profile-photo {
-  flex-shrink: 0;
-}
 
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #3498db; /* Optional border color */
-}
+
+
 
 .profile-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+
 }
 
 .profile-info h1 {
-  font-size: 2.5em;
+  font-size: 4.5em;
   color: #00adb5;
 }
 
 .profile-info h2 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
@@ -378,7 +380,10 @@ footer {
   font-size: 16px;
   margin-bottom: 15px;
 }
-
+.resume{
+  display: flex;
+  align-items: center;
+}
 .resume-btn {
   background-color: #3498db; /* Button color */
   color: white;
@@ -386,6 +391,7 @@ footer {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  justify-content: flex-end;
 }
 
 .resume-btn:hover {
