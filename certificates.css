@@ -32,3 +32,23 @@ body{
     font-family: "Dancing Script";
   }
   
+  
+
+/* Responsive Design for smaller screens */
+@media (max-width: 1200px) {
+  .certificates {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+@media (max-width: 900px) {
+  .certificates {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+@media (max-width: 600px) {
+  .certificates {
+    grid-template-columns: 1fr; /* 1 column for mobile screens */
+  }
+}
